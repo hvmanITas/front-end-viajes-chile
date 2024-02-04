@@ -144,7 +144,25 @@
       </div>
     </section>
     <!-- Contact Form Section -->
-    <section id="contact">
+    <section class="row mx-auto py-5 justify-content-center" id="contact">
+      <h2 class="my-5">CONTACTO</h2>
+      <!-- The form mockup was awfully designed so I decided not to mimic it at all 😂, all the opposite to a "Form Awesome" -->
+      <form class="col-8 col-sm-7 col-md-6 col-lg-5 col-xl-4 col-xxl-3 mb-5 text-start" id="form" action="#form">
+        <!-- Note: using a row to place a form is a regular practice, as shown in Bootstrap documentation -->
+        <div class="mb-4">
+          <label class="form-check-label" for="name">Nombre</label>
+          <input class="form-control my-3" id="name" type="name" pattern="^(?=.{1,40}$)[a-zA-ZáéíóúüñÁÉÍÓÚÑ]+(?:[\s][a-zA-ZáéíóúüñÁÉÍÓÚÑ]+)*$" required aria-required="true">
+        </div>
+        <div class="mb-4">
+          <label class="form-check-label" for="subject">Asunto</label>
+          <input class="form-control my-3" id="subject" type="subject" pattern="^(?=.{1,40}$)[a-zA-ZáéíóúüñÁÉÍÓÚÑ]+(?:[\s][a-zA-ZáéíóúüñÁÉÍÓÚÑ]+)*$" required aria-required="true">
+        </div>
+        <div class="mb-4">
+          <label class="form-check-label" for="message">Mensaje</label>
+          <textarea class="form-control my-3" id="message" rows="4" required aria-required="true"></textarea>
+        </div>
+        <button class="btn btn-light px-2 bg-info text-light" id="submit" type="submit" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-placement="right" data-bs-title="Haga click aquí para enviarnos su mensaje.">Enviar</button>
+      </form>
     </section>
     <!-- Footer -->
     <footer>
