@@ -11,3 +11,25 @@ body {
   color: #f8f9fa;                           /* Bootstrap "text-light" */
   scroll-behavior: smooth;
 }
+
+.d-contents {
+  display: contents;
+}
+
+.bg-xs-info {
+  background-color: #0dcaf0;                /* Bootstrap "bg-info" */
+}
+
+.navbar-brand-img-resize {
+  width: 35px;
+}
+
+@media (992px <= width) {
+  .position-lg-fixed {
+    position: fixed;
+  }
+
+  .bg-lg-transparent {
+    background-color: transparent;
+  }
+}
