@@ -1,0 +1,13 @@
+/* CSS Reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* Base style */
+  background-color: #212529;                /* Bootstrap "bg-dark" */
+  text-align: center;
+  font-weight: 400;                           /* Font Regular 400 */
+  font-family: "Open Sans", sans-serif;
+  color: #f8f9fa;                           /* Bootstrap "text-light" */
+  scroll-behavior: smooth;
+}
